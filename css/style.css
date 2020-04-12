@@ -115,7 +115,6 @@ ul.hoby li{
 ul.hoby li img{
 	width:85px;
 	height:85px;
-	/* background:url(../images/img-sprite.png)no-repeat; */
 	cursor:pointer;
 	display: block;
 }
@@ -155,128 +154,6 @@ a.download span{
 	margin-right:0.5em;
 	
 }
-/*--- About Part Ends Here ---*/
-/*--- Experience Starts Here ----*/
-.experience{
-	background:#f1f2f7;
-	min-height:1050px;
-}
-.exp-top{
-	padding:2em 0;
-}
-.exp-devide{
-	position:relative;
-	text-align:center;
-}
-.exp-devide h4{
-	color:#2b3b4b;
-	background:#d4d4d4;
-	padding:10px;
-	text-transform:uppercase;
-	font-size:20px;
-	display: block;
-	text-align:center;
-	width:15%;
-	font-weight:800;
-	border-radius:6px;
-	-webkit-border-radius:6px;
-	-o-border-radius:6px;
-	-ms-border-radius:6px;
-	-moz-border-radius:6px;
-	margin:0 auto;
-	position:relative;
-}
-span.devide-line{
-	width:3px;
-	height:450px;
-	position:absolute;
-	top:30px;
-	display:initial;
-	background:#d4d4d4;
-}
-label.bag{
-	width:32px;
-	height:32px;
-	background:url(../images/bag.png)no-repeat;
-	display: initial;
-	position:absolute;
-	top:5em;
-	left:39.7em;
-}
-label.book{
-	width:32px;
-	height:32px;
-	background:url(../images/book.png)no-repeat;
-	display: initial;
-	position:absolute;
-	top:5em;
-	left:39.7em;
-}
-.exp-devide-grid-right{
-	width:40%;
-	text-align:left;
-	position:absolute;
-	top: 7em;
-	left: 43.255em;
-}
-.exp-devide-grid-right:before{
-	content:url(../images/sec-d.png)no-repeat 0px 0px;
-	position:relative;
-	left:-3em;
-	top:1.5em;
-	
-}
-.exp-devide-grid-right h5,.exp-devide-grid-left h5,.exp-devide-grid-rightb h5{
-	color:#2b3b4b;
-	text-transform:uppercase;
-	font-size:18px;
-	font-weight:800;
-	margin:0;
-}
-.exp-devide-grid-right small,.exp-devide-grid-left small,.exp-devide-grid-rightb small{
-	font-size:16px;
-	font-weight:400;
-	color:#7f8a90;
-	padding:0 0 10px 0;
-}
-.exp-devide-grid-right p,.exp-devide-grid-left p,.exp-devide-grid-rightb p{
-	font-size:14px;
-	font-weight:400;
-	color:#7f8a90;
-	line-height:1.2em;
-}
-.exp-devide-grid-left{
-	width:40%;
-	text-align:right;
-	position:absolute;
-	top:12em;
-	left: 5.8em;
-}
-.exp-devide-grid-left:before{
-	content:url(../images/sec-d.png)no-repeat 0px 0px;
-	position:relative;
-	left:3em;
-	top:1.5em;
-	
-}
-.exp-devide-grid-rightb{
-	width:40%;
-	text-align:left;
-	position:absolute;
-	top: 20em;
-	left: 43.255em;
-}
-.exp-devide-grid-rightb:before{
-	content:url(../images/sec-d.png)no-repeat 0px 0px;
-	position:relative;
-	left:-3em;
-	top:1.5em;
-	
-}
-.education{
-	margin-top:35%;
-}
-/*--- Experience Ends Here ----*/
 /*--- Skills Starts Here ----*/
 .skills{
 	margin:2em 0;
