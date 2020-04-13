@@ -180,6 +180,7 @@ li.grid-item img {
 }
 
 .grid-item__title {
+    display: none;
     font-size: 1.50rem;
     font-weight: 400;
     line-height: 1rem;
@@ -193,55 +194,7 @@ li.grid-item img {
     position: fixed;
     top: 0px;
     right: 0px; 
+    background-color: #2980b9;
+    color: white;
 }
-
-.rsm-btn {
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: #333333d1;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 25px;
-    padding: 10px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  .rsm-btn span {    
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .rsm-btn span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .rsm-btn:hover span {
-    padding-right: 25px;
-  }
-  
-  .rsm-btn:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
- a#fixedbutton {color:whitesmoke;}         /* Unvisited link  */
- a#fixedbutton:visited {color:whitesmoke;} /* Visited link    */
- a#fixedbutton:hover {color:whitesmoke;}   /* Mouse over link */
- a#fixedbutton:active {color:whitesmoke;}  /* Selected link   */
-
-  @media only screen and (max-width: 600px) {
-.rsm-btn {
-    width: 100px;
-    }
-  }
 /* Resume Btn End */

@@ -104,23 +104,6 @@ ul.about-details li p span a{
 	font-weight:800;
 	margin-top:1em;
 }
-ul.hoby{
-	padding:0;
-	margin-bottom:1em;
-}
-ul.hoby li{
-	display: inline-block;
-	margin:1em 0.5em;
-}
-ul.hoby li img{
-	width:85px;
-	height:85px;
-	cursor:pointer;
-	display: block;
-}
-ul.hoby li img:hover{
-	opacity:0.5;
-}
 a.download{
 	color:#fff;
 	font-size:20px;
