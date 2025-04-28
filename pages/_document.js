@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import {
   Html, Head, Main, NextScript,
 } from 'next/document';
@@ -29,6 +30,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
+        <SpeedInsights />
         <NextScript />
       </body>
     </Html>
