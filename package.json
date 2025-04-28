@@ -1,0 +1,44 @@
+{
+  "name": "ismailmmd.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "next dev",
+    "build": "next build --no-lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/theme-tools": "^2.2.6",
+    "next": "12.1.5",
+    "polished": "^4.1.3",
+    "prop-types": "^15.8.1",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.+(json|css|md)": "prettier --write"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.17.0",
+    "@next/eslint-plugin-next": "^12.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2"
+  }
+}
