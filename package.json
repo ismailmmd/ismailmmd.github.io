@@ -29,11 +29,7 @@
     "*.+(json|css|md)": "prettier --write"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/eslint-parser": "^7.17.0",
     "@next/eslint-plugin-next": "^12.1.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.31.0",
