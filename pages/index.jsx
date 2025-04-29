@@ -101,10 +101,17 @@ export default function Home() {
           />
           <Experience
             href="https://github.com/ismailmmd/session-alert"
-            side="2022"
+            side="2020"
             title="Session Alert"
             desc="A simple tool to alert you when your session is about to expire."
             stack="Angular"
+          />
+          <Experience
+            href="https://github.com/ismailmmd/ismailmmd.github.io"
+            side="2020"
+            title="Portfolio"
+            desc="A simple portfolio website to showcase my works and projects. Feel free to clone and use it."
+            stack="JS • HTML • CSS • React • Next.js"
           />
         </Box>
       </Box>
