@@ -1,7 +1,9 @@
 import {
   Box, Text, Heading, GridItem,
+  Flex,
 } from '@chakra-ui/react';
 import Head from 'next/head';
+import { FaLocationDot } from 'react-icons/fa6';
 import { Grid } from '../components/Grid';
 import { Experience } from '../components/Experience';
 import { Avatar } from '../components/Avatar';
@@ -25,6 +27,10 @@ export default function Home() {
                 Ismail Mohammed
               </Heading>
               <Text>Full Stack Engineer</Text>
+              <Flex>
+                <FaLocationDot />
+                <Text ml={1}>Tallinn</Text>
+              </Flex>
             </Box>
           </GridItem>
         </Grid>
