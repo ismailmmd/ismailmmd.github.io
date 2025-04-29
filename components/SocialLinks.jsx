@@ -1,10 +1,14 @@
 import {
-  Link, Flex, GridItem, Grid,
+  Link, Flex, GridItem, Grid, Popover, PopoverTrigger,
+  PopoverContent, PopoverBody, Image, Box,
 } from '@chakra-ui/react';
 import { FaStackOverflow, FaLinkedin, FaGithub } from 'react-icons/fa';
 import React from 'react';
+import colors from '../utils/colors';
 
 export default function SocialLinks() {
+  const bgColor = colors.black[500];
+
   return (
     <Grid templateColumns="repeat(5, 1fr)" mb={10} alignItems="flex-start">
       <GridItem>
@@ -19,26 +23,56 @@ export default function SocialLinks() {
         </Link>
       </GridItem>
       <GridItem>
-        <Link href="https://github.com/ismailmmd">
-          <Flex align="center" gap="2">
-            {' '}
-            <FaGithub />
-            {' '}
-            Github
-            {' '}
-          </Flex>
-        </Link>
+        <Popover trigger="hover" placement="bottom" openDelay={200}>
+          <PopoverTrigger>
+            <Link href="https://github.com/ismailmmd">
+              <Flex align="center" gap="2">
+                {' '}
+                <FaGithub />
+                {' '}
+                Github
+                {' '}
+              </Flex>
+            </Link>
+          </PopoverTrigger>
+          <PopoverContent width="300px" boxShadow="lg" borderRadius="md" bg={bgColor}>
+            <PopoverBody>
+              <Box p={2}>
+                <Image
+                  src="https://github-readme-streak-stats.herokuapp.com?user=ismailmmd&exclude_days=Sun%2CSat"
+                  alt="GitHub Streak"
+                  width="100%"
+                />
+              </Box>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
       </GridItem>
       <GridItem>
-        <Link href="https://stackoverflow.com/users/7962589/ismail">
-          <Flex align="center" gap="2">
-            {' '}
-            <FaStackOverflow />
-            {' '}
-            StackOverflow
-            {' '}
-          </Flex>
-        </Link>
+        <Popover trigger="hover" placement="bottom" openDelay={200}>
+          <PopoverTrigger>
+            <Link href="https://stackoverflow.com/users/7962589/ismail">
+              <Flex align="center" gap="2">
+                {' '}
+                <FaStackOverflow />
+                {' '}
+                StackOverflow
+                {' '}
+              </Flex>
+            </Link>
+          </PopoverTrigger>
+          <PopoverContent width="300px" boxShadow="lg" borderRadius="md" bg={bgColor}>
+            <PopoverBody>
+              <Box p={2}>
+                <Image
+                  src="https://stackoverflow-card.vercel.app/?userID=7962589&theme=stackoverflow-light"
+                  alt="StackOverflow Stats"
+                  width="100%"
+                />
+              </Box>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
       </GridItem>
     </Grid>
   );
