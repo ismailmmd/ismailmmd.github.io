@@ -92,9 +92,9 @@ export default function Home() {
           </Heading>
 
           <Experience
-            href="https://podpod.me"
+            href="https://github.com/ismailmmd/vigilant-rotary-phone"
             side="1 %"
-            title="Stamper App MVP"
+            title="Vigilant Rotary Phone - MVP"
             desc="Stamp coupon App to App"
             stack="Kotlin • Android • Firebase"
           />
