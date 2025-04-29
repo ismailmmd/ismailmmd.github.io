@@ -1,9 +1,10 @@
 import { Text, Heading, GridItem } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { LuExternalLink } from 'react-icons/lu';
-import { Grid } from './Grid';
+import React from 'react';
+import Grid from './Grid';
 
-export function Experience({
+export default function Experience({
   side, title, desc = '', stack = '', href = '', ...props
 }) {
   return (

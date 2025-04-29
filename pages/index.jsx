@@ -1,13 +1,14 @@
+import React from 'react';
 import {
   Box, Text, Heading, GridItem,
   Flex,
 } from '@chakra-ui/react';
 import Head from 'next/head';
 import { FaLocationDot } from 'react-icons/fa6';
-import { Grid } from '../components/Grid';
-import { Experience } from '../components/Experience';
-import { Avatar } from '../components/Avatar';
-import { SocialLinks } from '../components/SocialLinks';
+import Grid from '../components/Grid';
+import Experience from '../components/Experience';
+import Avatar from '../components/Avatar';
+import SocialLinks from '../components/SocialLinks';
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
             About Me
           </Heading>
           <Text>
-            I'm Ismail — a builder at heart. I focus on backend engineering,
+            I&apos;m Ismail — a builder at heart. I focus on backend engineering,
             performance, and making products that grow and evolve with real user
             feedback. I’m all about shipping fast, learning from users, and always
             trying out new ideas.

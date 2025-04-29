@@ -1,6 +1,7 @@
-import { Image, Flex } from '@chakra-ui/react';
+import React from 'react';
+import { Flex, Image } from '@chakra-ui/react';
 
-export function Avatar() {
+export default function Avatar() {
   return (
     <Flex align="center" justify="center" position="relative" m={5}>
       <Image
