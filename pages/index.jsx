@@ -1,11 +1,14 @@
+import React from 'react';
 import {
   Box, Text, Heading, GridItem,
+  Flex,
 } from '@chakra-ui/react';
 import Head from 'next/head';
-import { Grid } from '../components/Grid';
-import { Experience } from '../components/Experience';
-import { Avatar } from '../components/Avatar';
-import { SocialLinks } from '../components/SocialLinks';
+import { FaLocationDot } from 'react-icons/fa6';
+import Grid from '../components/Grid';
+import Experience from '../components/Experience';
+import Avatar from '../components/Avatar';
+import SocialLinks from '../components/SocialLinks';
 
 export default function Home() {
   return (
@@ -25,6 +28,10 @@ export default function Home() {
                 Ismail Mohammed
               </Heading>
               <Text>Full Stack Engineer</Text>
+              <Flex>
+                <FaLocationDot />
+                <Text ml={1}>Tallinn</Text>
+              </Flex>
             </Box>
           </GridItem>
         </Grid>
@@ -33,7 +40,7 @@ export default function Home() {
             About Me
           </Heading>
           <Text>
-            I'm Ismail — a builder at heart. I focus on backend engineering,
+            I&apos;m Ismail — a builder at heart. I focus on backend engineering,
             performance, and making products that grow and evolve with real user
             feedback. I’m all about shipping fast, learning from users, and always
             trying out new ideas.
@@ -86,9 +93,9 @@ export default function Home() {
           </Heading>
 
           <Experience
-            href="https://podpod.me"
+            href="https://github.com/ismailmmd/vigilant-rotary-phone"
             side="1 %"
-            title="Stamper App MVP"
+            title="Vigilant Rotary Phone - MVP"
             desc="Stamp coupon App to App"
             stack="Kotlin • Android • Firebase"
           />

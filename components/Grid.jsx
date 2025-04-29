@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { Grid as ChakraGrid } from '@chakra-ui/react';
+import React from 'react';
 
-export function Grid({ children, ...rest }) {
+export default function Grid({ children, ...rest }) {
   return (
     <ChakraGrid
       maxW="1920px"

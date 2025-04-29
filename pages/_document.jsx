@@ -1,7 +1,9 @@
+import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import {
   Html, Head, Main, NextScript,
 } from 'next/document';
+import React from 'react';
 
 export default function Document() {
   return (
@@ -30,8 +32,9 @@ export default function Document() {
       </Head>
       <body>
         <Main />
-        <SpeedInsights />
         <NextScript />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </Html>
   );

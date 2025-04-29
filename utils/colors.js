@@ -5,18 +5,15 @@ const generateColourPalette = (baseColor) => {
   const darkKeys = [600, 700, 800, 900];
   const indexDivider = 20;
 
-  const light = lightKeys.reduce(
-    (acc, key, index) => (
-      (acc[key] = lighten((index + 1) / indexDivider, baseColor)), acc
-    ),
-    {},
-  );
-  const dark = darkKeys.reduce(
-    (acc, key, index) => (
-      (acc[key] = darken((index + 1) / indexDivider, baseColor)), acc
-    ),
-    {},
-  );
+  const light = lightKeys.reduce((acc, key, index) => {
+    acc[key] = lighten((index + 1) / indexDivider, baseColor);
+    return acc;
+  }, {});
+
+  const dark = darkKeys.reduce((acc, key, index) => {
+    acc[key] = darken((index + 1) / indexDivider, baseColor);
+    return acc;
+  }, {});
 
   return {
     ...light,
@@ -25,7 +22,7 @@ const generateColourPalette = (baseColor) => {
   };
 };
 
-export const colors = {
+export default {
   black: generateColourPalette('#000'),
   white: generateColourPalette('#fff'),
 };

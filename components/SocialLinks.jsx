@@ -2,8 +2,9 @@ import {
   Link, Flex, GridItem, Grid,
 } from '@chakra-ui/react';
 import { FaStackOverflow, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from 'react';
 
-export function SocialLinks() {
+export default function SocialLinks() {
   return (
     <Grid templateColumns="repeat(5, 1fr)" mb={10} alignItems="flex-start">
       <GridItem>
