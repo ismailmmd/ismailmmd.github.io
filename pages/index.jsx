@@ -97,7 +97,7 @@ export default function Home() {
             side="1 %"
             title="Vigilant Rotary Phone - MVP"
             desc="Stamp coupon App to App"
-            stack="Kotlin • Android • Firebase"
+            stack="Kotlin • Flutter • Android • Firebase"
           />
           <Experience
             href="https://github.com/ismailmmd/session-alert"
