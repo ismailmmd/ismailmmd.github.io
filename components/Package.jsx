@@ -1,23 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, Heading, GridItem } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { LuExternalLink } from 'react-icons/lu';
 import { FaDownload } from 'react-icons/fa6';
 import Grid from './Grid';
+import fetchNpmDownloads from '../utils/npmDownloads';
 
 export default function Package({
-  side, title, desc = '', stack = '', href = '', downloads = '',
+  side, title, desc = '', stack = '', href = '', npmPackage = '',
 }) {
+  const [downloadCount, setDownloadCount] = useState('');
+
+  useEffect(() => {
+    if (npmPackage) {
+      fetchNpmDownloads(npmPackage).then((count) => {
+        if (count) {
+          setDownloadCount(count);
+        }
+      });
+    }
+  }, [npmPackage]);
+
   return (
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>
       <GridItem colSpan={{ base: 4, sm: 1 }}>
         <Text color="white" opacity={0.5}>
           {side}
         </Text>
-        {downloads && (
+        {downloadCount && (
           <Text color="white" opacity={0.3} fontSize="sm" mt={1}>
             <FaDownload style={{ display: 'inline', marginRight: '0.25rem' }} />
-            {downloads}
+            {downloadCount}
           </Text>
         )}
       </GridItem>
@@ -52,12 +65,12 @@ Package.propTypes = {
   desc: PropTypes.string,
   stack: PropTypes.string,
   href: PropTypes.string,
-  downloads: PropTypes.string,
+  npmPackage: PropTypes.string,
 };
 
 Package.defaultProps = {
   desc: '',
   stack: '',
   href: '',
-  downloads: '',
+  npmPackage: '',
 };
