@@ -1,11 +1,12 @@
+import React from 'react';
 import { Text, Heading, GridItem } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { LuExternalLink } from 'react-icons/lu';
-import React from 'react';
+import { FaDownload } from 'react-icons/fa6';
 import Grid from './Grid';
 
-export default function Experience({
-  side, title, desc = '', stack = '', href = '',
+export default function Package({
+  side, title, desc = '', stack = '', href = '', downloads = '',
 }) {
   return (
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>
@@ -13,6 +14,12 @@ export default function Experience({
         <Text color="white" opacity={0.5}>
           {side}
         </Text>
+        {downloads && (
+          <Text color="white" opacity={0.3} fontSize="sm" mt={1}>
+            <FaDownload style={{ display: 'inline', marginRight: '0.25rem' }} />
+            {downloads}
+          </Text>
+        )}
       </GridItem>
       <GridItem colSpan={{ base: 4, sm: 3 }}>
         <Heading
@@ -39,16 +46,18 @@ export default function Experience({
   );
 }
 
-Experience.propTypes = {
+Package.propTypes = {
   side: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string,
   stack: PropTypes.string,
   href: PropTypes.string,
+  downloads: PropTypes.string,
 };
 
-Experience.defaultProps = {
+Package.defaultProps = {
   desc: '',
   stack: '',
   href: '',
+  downloads: '',
 };
