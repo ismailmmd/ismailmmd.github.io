@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { FaLocationDot } from 'react-icons/fa6';
 import Grid from '../components/Grid';
 import Experience from '../components/Experience';
+import Package from '../components/Package';
 import Avatar from '../components/Avatar';
 import SocialLinks from '../components/SocialLinks';
 
@@ -99,19 +100,24 @@ export default function Home() {
             desc="Stamp coupon App to App"
             stack="Kotlin • Flutter • Android • Firebase"
           />
-          <Experience
-            href="https://github.com/ismailmmd/session-alert"
-            side="2020"
-            title="Session Alert"
-            desc="A simple tool to alert you when your session is about to expire."
-            stack="Angular"
+
+          <Heading as="h2" size="md" mt={14} mb={10}>
+            Publishing
+          </Heading>
+
+          <Package
+            href="https://www.npmjs.com/package/@slowcode/caat"
+            side="v2.1.1"
+            title="CAAT - CLI Tool to read Markdown"
+            desc="A CLI tool that converts Markdown files to beautifully styled terminal output with colors and formatting. An enhanced alternative to the standard cat command."
+            stack="JavaScript • Node.js • CLI • NPM"
           />
-          <Experience
-            href="https://github.com/ismailmmd/ismailmmd.github.io"
-            side="2020"
-            title="Portfolio"
-            desc="A simple portfolio website to showcase my works and projects. Feel free to clone and use it."
-            stack="JS • HTML • CSS • React • Next.js"
+          <Package
+            href="https://www.npmjs.com/package/session-alert-l"
+            side="v1.0.0"
+            title="Session Alert"
+            desc="A plug-and-play Angular component to track user session time and alert when it's about to expire. Built with TypeScript and compatible with Angular CLI 8.0.6."
+            stack="TypeScript • Angular • NPM"
           />
         </Box>
       </Box>
