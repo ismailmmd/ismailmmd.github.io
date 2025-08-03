@@ -6,7 +6,7 @@ import { FaDownload } from 'react-icons/fa6';
 import Grid from './Grid';
 
 export default function Package({
-  side, title, desc, stack, href, downloads,
+  side, title, desc = '', stack = '', href = '', downloads = '',
 }) {
   return (
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>

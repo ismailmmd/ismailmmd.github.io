@@ -5,10 +5,10 @@ import React from 'react';
 import Grid from './Grid';
 
 export default function Experience({
-  side, title, desc = '', stack = '', href = '', ...props
+  side, title, desc = '', stack = '', href = '',
 }) {
   return (
-    <Grid templateColumns="repeat(4, 1fr)" mb={10} {...props}>
+    <Grid templateColumns="repeat(4, 1fr)" mb={10}>
       <GridItem colSpan={{ base: 4, sm: 1 }}>
         <Text color="white" opacity={0.5}>
           {side}
@@ -45,4 +45,10 @@ Experience.propTypes = {
   desc: PropTypes.string,
   stack: PropTypes.string,
   href: PropTypes.string,
+};
+
+Experience.defaultProps = {
+  desc: '',
+  stack: '',
+  href: '',
 };
