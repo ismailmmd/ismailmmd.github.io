@@ -5,17 +5,25 @@ import { LuExternalLink } from 'react-icons/lu';
 import { FaDownload } from 'react-icons/fa6';
 import Grid from './Grid';
 import fetchNpmDownloads from '../utils/npmDownloads';
+import fetchNpmVersion from '../utils/npmVersion';
 
 export default function Package({
-  side, title, desc = '', stack = '', href = '', npmPackage = '',
+  category, title, desc = '', stack = '', href = '', npmPackage = '',
 }) {
   const [downloadCount, setDownloadCount] = useState('');
+  const [version, setVersion] = useState('');
 
   useEffect(() => {
     if (npmPackage) {
       fetchNpmDownloads(npmPackage).then((count) => {
         if (count) {
           setDownloadCount(count);
+        }
+      });
+
+      fetchNpmVersion(npmPackage).then((ver) => {
+        if (ver) {
+          setVersion(ver);
         }
       });
     }
@@ -25,8 +33,14 @@ export default function Package({
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>
       <GridItem colSpan={{ base: 4, sm: 1 }}>
         <Text color="white" opacity={0.5}>
-          {side}
+          {category}
         </Text>
+        {version && (
+          <Text color="white" opacity={0.3} fontSize="sm" mt={1}>
+            v
+            {version}
+          </Text>
+        )}
         {downloadCount && (
           <Text color="white" opacity={0.3} fontSize="sm" mt={1}>
             <FaDownload style={{ display: 'inline', marginRight: '0.25rem' }} />
@@ -60,7 +74,7 @@ export default function Package({
 }
 
 Package.propTypes = {
-  side: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string,
   stack: PropTypes.string,
