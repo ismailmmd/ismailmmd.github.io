@@ -1,11 +1,15 @@
+import React from 'react';
 import { Text, Heading, GridItem } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { LuExternalLink } from 'react-icons/lu';
-import React from 'react';
 import Grid from './Grid';
 
 export default function Experience({
-  side, title, desc = '', stack = '', href = '',
+  side,
+  title,
+  desc = '',
+  stack = '',
+  href = '',
 }) {
   return (
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>
@@ -45,10 +49,4 @@ Experience.propTypes = {
   desc: PropTypes.string,
   stack: PropTypes.string,
   href: PropTypes.string,
-};
-
-Experience.defaultProps = {
-  desc: '',
-  stack: '',
-  href: '',
 };

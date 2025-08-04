@@ -1,16 +1,16 @@
-import PropTypes from 'prop-types';
-import { Grid as ChakraGrid } from '@chakra-ui/react';
 import React from 'react';
+import { Grid as ChakraGrid } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 
 export default function Grid({
   children,
   templateColumns = 'repeat(12, 1fr)',
-  mb,
-  alignItems,
-  gap,
-  gridGap,
-  rowGap,
-  columnGap,
+  mb = undefined,
+  alignItems = undefined,
+  gap = undefined,
+  gridGap = undefined,
+  rowGap = undefined,
+  columnGap = undefined,
 }) {
   return (
     <ChakraGrid
@@ -39,14 +39,4 @@ Grid.propTypes = {
   gridGap: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   rowGap: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   columnGap: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
-Grid.defaultProps = {
-  templateColumns: 'repeat(12, 1fr)',
-  mb: undefined,
-  alignItems: undefined,
-  gap: undefined,
-  gridGap: undefined,
-  rowGap: undefined,
-  columnGap: undefined,
 };
