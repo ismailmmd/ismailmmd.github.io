@@ -5,9 +5,13 @@ import system from '../utils/theme';
 import Home from '../pages/index';
 
 // Mock Next.js Head component
-jest.mock('next/head', () => function Head({ children }) {
-  return <>{children}</>;
-});
+jest.mock(
+  'next/head',
+  () =>
+    function Head({ children }) {
+      return <>{children}</>;
+    }
+);
 
 // Mock react-icons
 jest.mock('react-icons/fa6', () => ({
@@ -20,7 +24,9 @@ jest.mock('react-icons/lu', () => ({
 }));
 
 // Mock npm utilities to avoid fetch calls
-jest.mock('../utils/npmDownloads', () => jest.fn(() => Promise.resolve('1,234')));
+jest.mock('../utils/npmDownloads', () =>
+  jest.fn(() => Promise.resolve('1,234'))
+);
 
 jest.mock('../utils/npmVersion', () => jest.fn(() => Promise.resolve('2.1.1')));
 
@@ -34,7 +40,7 @@ describe('Home Page', () => {
     const { container } = render(
       <TestWrapper>
         <Home />
-      </TestWrapper>,
+      </TestWrapper>
     );
 
     expect(container.firstChild).toMatchSnapshot();
@@ -44,7 +50,7 @@ describe('Home Page', () => {
     const { getByText, getByTestId } = render(
       <TestWrapper>
         <Home />
-      </TestWrapper>,
+      </TestWrapper>
     );
 
     // Check for main heading

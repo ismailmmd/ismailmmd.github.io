@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "dev": "next dev",
-    "build": "next build --no-lint",
+    "build": "next build",
     "start": "next start",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "husky"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.24.0",
@@ -23,14 +26,14 @@
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.+(json|css|md)": "prettier --write"
+    "*.{js,jsx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md,yml,yaml}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.0",
@@ -38,11 +41,17 @@
     "@testing-library/react": "^16.3.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^15.4.5",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^9.1.7",
     "jest": "^30.0.5",
-    "jest-environment-jsdom": "^30.0.5"
+    "jest-environment-jsdom": "^30.0.5",
+    "lint-staged": "^16.1.4",
+    "prettier": "^3.6.2"
   }
 }

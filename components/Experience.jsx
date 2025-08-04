@@ -28,15 +28,13 @@ export default function Experience({
           alignItems="center"
         >
           {title}
-          {href && (
-          <LuExternalLink style={{ marginLeft: '0.5rem' }} />
-          )}
+          {href && <LuExternalLink style={{ marginLeft: '0.5rem' }} />}
         </Heading>
         {desc && <Text my={2}>{desc}</Text>}
         {stack && (
-        <Text color="white" opacity={0.5}>
-          {stack}
-        </Text>
+          <Text color="white" opacity={0.5}>
+            {stack}
+          </Text>
         )}
       </GridItem>
     </Grid>

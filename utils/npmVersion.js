@@ -1,6 +1,6 @@
 const NPM_REGISTRY_BASE = 'https://registry.npmjs.org/';
 
-const fetchNpmVersion = async (packageName) => {
+const fetchNpmVersion = async packageName => {
   try {
     const response = await fetch(`${NPM_REGISTRY_BASE}${packageName}/latest`);
     if (!response.ok) {

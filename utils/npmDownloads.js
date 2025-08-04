@@ -1,6 +1,6 @@
 const NPM_API_BASE = 'https://api.npmjs.org/downloads/point/last-month/';
 
-const fetchNpmDownloads = async (packageName) => {
+const fetchNpmDownloads = async packageName => {
   try {
     const response = await fetch(`${NPM_API_BASE}${packageName}`);
     if (!response.ok) {

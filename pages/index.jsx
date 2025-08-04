@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Box, Text, Heading, GridItem,
-  Flex,
-} from '@chakra-ui/react';
+import { Box, Text, Heading, GridItem, Flex } from '@chakra-ui/react';
 import Head from 'next/head';
 import { FaLocationDot } from 'react-icons/fa6';
 import Grid from '../components/Grid';
@@ -41,10 +38,10 @@ export default function Home() {
             About Me
           </Heading>
           <Text>
-            I&apos;m Ismail — a builder at heart. I focus on backend engineering,
-            performance, and making products that grow and evolve with real user
-            feedback. I’m all about shipping fast, learning from users, and always
-            trying out new ideas.
+            I&apos;m Ismail — a builder at heart. I focus on backend
+            engineering, performance, and making products that grow and evolve
+            with real user feedback. I’m all about shipping fast, learning from
+            users, and always trying out new ideas.
           </Text>
         </Box>
         <Box mb={10}>

@@ -1,5 +1,12 @@
 import {
-  Link, Flex, GridItem, Grid, Popover, Portal, Image, Box,
+  Link,
+  Flex,
+  GridItem,
+  Grid,
+  Popover,
+  Portal,
+  Image,
+  Box,
 } from '@chakra-ui/react';
 import { FaStackOverflow, FaLinkedin, FaGithub } from 'react-icons/fa';
 import React from 'react';
@@ -14,10 +21,7 @@ export default function SocialLinks() {
         <Link href="https://www.linkedin.com/in/ismail-mohmmd/">
           <Flex align="center" gap="2">
             {' '}
-            <FaLinkedin />
-            {' '}
-            LinkedIn
-            {' '}
+            <FaLinkedin /> LinkedIn{' '}
           </Flex>
         </Link>
       </GridItem>
@@ -27,16 +31,18 @@ export default function SocialLinks() {
             <Link href="https://github.com/ismailmmd">
               <Flex align="center" gap="2">
                 {' '}
-                <FaGithub />
-                {' '}
-                Github
-                {' '}
+                <FaGithub /> Github{' '}
               </Flex>
             </Link>
           </Popover.Trigger>
           <Portal>
             <Popover.Positioner>
-              <Popover.Content width="300px" boxShadow="lg" borderRadius="md" bg={bgColor}>
+              <Popover.Content
+                width="300px"
+                boxShadow="lg"
+                borderRadius="md"
+                bg={bgColor}
+              >
                 <Popover.Body>
                   <Box p={2}>
                     <Image
@@ -57,16 +63,18 @@ export default function SocialLinks() {
             <Link href="https://stackoverflow.com/users/7962589/ismail">
               <Flex align="center" gap="2">
                 {' '}
-                <FaStackOverflow />
-                {' '}
-                StackOverflow
-                {' '}
+                <FaStackOverflow /> StackOverflow{' '}
               </Flex>
             </Link>
           </Popover.Trigger>
           <Portal>
             <Popover.Positioner>
-              <Popover.Content width="300px" boxShadow="lg" borderRadius="md" bg={bgColor}>
+              <Popover.Content
+                width="300px"
+                boxShadow="lg"
+                borderRadius="md"
+                bg={bgColor}
+              >
                 <Popover.Body>
                   <Box p={2}>
                     <Image
