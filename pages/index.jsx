@@ -107,7 +107,6 @@ export default function Home() {
 
           <Package
             href="https://www.npmjs.com/package/@slowcode/caat"
-            side="v2.1.1"
             title="CAAT - CLI Tool to read Markdown"
             desc="A CLI tool that converts Markdown files to beautifully styled terminal output with colors and formatting. An enhanced alternative to the standard cat command."
             stack="JavaScript • Node.js • CLI • NPM"
@@ -115,7 +114,6 @@ export default function Home() {
           />
           <Package
             href="https://www.npmjs.com/package/session-alert-l"
-            side="v1.0.0"
             title="Session Alert"
             desc="A plug-and-play Angular component to track user session time and alert when it's about to expire. Built with TypeScript and compatible with Angular CLI 8.0.6."
             stack="TypeScript • Angular • NPM"
