@@ -9,7 +9,6 @@ import {
   Box,
 } from '@chakra-ui/react';
 import { FaStackOverflow, FaLinkedin, FaGithub } from 'react-icons/fa';
-import React from 'react';
 import colors from '../utils/colors';
 
 export default function SocialLinks() {

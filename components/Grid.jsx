@@ -1,4 +1,3 @@
-import React from 'react';
 import { Grid as ChakraGrid } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Text, Heading, GridItem } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { LuExternalLink } from 'react-icons/lu';

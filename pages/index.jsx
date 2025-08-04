@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Text, Heading, GridItem, Flex } from '@chakra-ui/react';
 import Head from 'next/head';
 import { FaLocationDot } from 'react-icons/fa6';
