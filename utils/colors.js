@@ -1,6 +1,6 @@
 import { lighten, darken } from 'polished';
 
-const generateColourPalette = (baseColor) => {
+const generateColourPalette = baseColor => {
   const lightKeys = [300, 200, 100, 50];
   const darkKeys = [600, 700, 800, 900];
   const indexDivider = 20;
@@ -22,7 +22,9 @@ const generateColourPalette = (baseColor) => {
   };
 };
 
-export default {
+const colors = {
   black: generateColourPalette('#000'),
   white: generateColourPalette('#fff'),
 };
+
+export default colors;

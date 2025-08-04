@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Home Page renders correctly and matches snapshot 1`] = `
+<div
+  class="css-1nnpsoi"
+>
+  <div
+    class="css-ldct8f"
+  >
+    <div
+      class="css-zd4of5"
+    >
+      <div
+        class="css-qllgfo"
+      >
+        <img
+          alt="Avatar of me."
+          class="chakra-image css-18q8ejv"
+          src="/profile.png"
+        />
+      </div>
+    </div>
+    <div
+      class="css-rklm6r"
+    >
+      <div>
+        <h1
+          class="chakra-heading css-1868jki"
+        >
+          Ismail Mohammed
+        </h1>
+        <p>
+          Full Stack Engineer
+        </p>
+        <div
+          class="css-k008qs"
+        >
+          <div
+            data-testid="location-icon"
+          >
+            📍
+          </div>
+          <p
+            class="css-e2kesm"
+          >
+            Tallinn
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="css-yitkgg"
+  >
+    <h2
+      class="chakra-heading css-k5qncm"
+    >
+      About Me
+    </h2>
+    <p>
+      I'm Ismail — a builder at heart. I focus on backend engineering, performance, and making products that grow and evolve with real user feedback. I’m all about shipping fast, learning from users, and always trying out new ideas.
+    </p>
+  </div>
+  <div
+    class="css-yitkgg"
+  >
+    <h2
+      class="chakra-heading css-k5qncm"
+    >
+      Connect with me
+    </h2>
+    <div
+      class="css-x7sv9v"
+    >
+      <div>
+        <a
+          class="chakra-link css-2yvnes"
+          href="https://www.linkedin.com/in/ismail-mohmmd/"
+        >
+          <div
+            class="css-14fyjnu"
+          >
+             
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
+             
+            LinkedIn
+             
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          aria-controls="popover:«r0»:content"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class="chakra-link chakra-popover__trigger css-2yvnes"
+          data-part="trigger"
+          data-scope="popover"
+          data-state="closed"
+          dir="ltr"
+          href="https://github.com/ismailmmd"
+          id="popover:«r0»:trigger"
+          type="button"
+        >
+          <div
+            class="css-14fyjnu"
+          >
+             
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 496 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              />
+            </svg>
+             
+            Github
+             
+          </div>
+        </a>
+      </div>
+      <div>
+        <a
+          aria-controls="popover:«r1»:content"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class="chakra-link chakra-popover__trigger css-2yvnes"
+          data-part="trigger"
+          data-scope="popover"
+          data-state="closed"
+          dir="ltr"
+          href="https://stackoverflow.com/users/7962589/ismail"
+          id="popover:«r1»:trigger"
+          type="button"
+        >
+          <div
+            class="css-14fyjnu"
+          >
+             
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 384 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"
+              />
+            </svg>
+             
+            StackOverflow
+             
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="css-287hsr"
+  >
+    <h2
+      class="chakra-heading css-24wia3"
+    >
+      Work Experience
+    </h2>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      >
+        <p
+          class="css-1assyzo"
+        >
+          2022 - moment()
+        </p>
+      </div>
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://www.pipedrive.com/en"
+          target="_blank"
+        >
+          Full Stack Engineer – Pipedrive
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          Designed and Developed highly scalable, high throughput event driven microservices for multi data centered environment.
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          Fastify • TypeScript • Kafka • MySQL • Redis • K8s • AWS
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      >
+        <p
+          class="css-1assyzo"
+        >
+          2021 - 2022
+        </p>
+      </div>
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://www.symplr.com/"
+          target="_blank"
+        >
+          Senior Software Engineer – Symplr
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          Developed and maintained the provider credentialing system on microservice architecture. Designed and Developed ETL.
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          Angular • Springboot • Java • Azure • PostgreSQL
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      >
+        <p
+          class="css-1assyzo"
+        >
+          2019 – 2021
+        </p>
+      </div>
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://www.geniallife.it/"
+          target="_blank"
+        >
+          Full Stack Developer – Allianz Technology
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          Developed GenialLife insurance platform, with over 1 million users. Migrated legacy monolith to microservices architecture and cloud.
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          Angular • Java • Springboot • AWS • PostgreSQL
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      >
+        <p
+          class="css-1assyzo"
+        >
+          2017 – 2019
+        </p>
+      </div>
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://www.boots.com/"
+          target="_blank"
+        >
+          Software Engineer – Boots (UST)
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          Store Tech Support and Maintenance. Automated store process and customer feedback system.
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          .Net • C# • SQL Server • Azure 
+        </p>
+      </div>
+    </div>
+    <h2
+      class="chakra-heading css-1mabc1x"
+    >
+      Side Projects
+    </h2>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      >
+        <p
+          class="css-1assyzo"
+        >
+          1 %
+        </p>
+      </div>
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://github.com/ismailmmd/vigilant-rotary-phone"
+          target="_blank"
+        >
+          Vigilant Rotary Phone - MVP
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          Stamp coupon App to App
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          Kotlin • Flutter • Android • Firebase
+        </p>
+      </div>
+    </div>
+    <h2
+      class="chakra-heading css-1mabc1x"
+    >
+      Publishing
+    </h2>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      />
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://www.npmjs.com/package/@slowcode/caat"
+          target="_blank"
+        >
+          CAAT - CLI Tool to read Markdown
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          A CLI tool that converts Markdown files to beautifully styled terminal output with colors and formatting. An enhanced alternative to the standard cat command.
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          JavaScript • Node.js • CLI • NPM
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-36zox0"
+    >
+      <div
+        class="css-1hmz8py"
+      />
+      <div
+        class="css-1d7agkx"
+      >
+        <a
+          class="chakra-heading css-1wrmtrm"
+          href="https://www.npmjs.com/package/session-alert-l"
+          target="_blank"
+        >
+          Session Alert
+          <div
+            data-testid="external-link-icon"
+          >
+            🔗
+          </div>
+        </a>
+        <p
+          class="css-1gzegh3"
+        >
+          A plug-and-play Angular component to track user session time and alert when it's about to expire. Built with TypeScript and compatible with Angular CLI 8.0.6.
+        </p>
+        <p
+          class="css-1assyzo"
+        >
+          TypeScript • Angular • NPM
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

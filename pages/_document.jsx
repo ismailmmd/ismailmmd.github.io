@@ -1,9 +1,4 @@
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import {
-  Html, Head, Main, NextScript,
-} from 'next/document';
-import React from 'react';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -18,13 +13,19 @@ export default function Document() {
           itemProp="description"
           content="Ismail Mohammed - Full Stack Engineer"
         />
-        <meta itemProp="image" content="https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4" />
+        <meta
+          itemProp="image"
+          content="https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4"
+        />
         <meta name="og:title" content="Ismail M - Full Stack Engineer" />
         <meta
           name="og:description"
           content="Ismail Mohammed - Full Stack Engineer"
         />
-        <meta name="og:image" content="https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4" />
+        <meta
+          name="og:image"
+          content="https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4"
+        />
         <meta name="og:url" content="https://ismailmmd.github.io/" />
         <meta name="og:site_name" content="IsmailMmd" />
         <meta name="og:type" content="website" />
@@ -33,8 +34,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <SpeedInsights />
-        <Analytics />
       </body>
     </Html>
   );
