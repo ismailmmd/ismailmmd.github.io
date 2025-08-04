@@ -1,0 +1,2 @@
+This is a test file to test the pre-commit hook functionality.
+const   badFormatting=  "this should be formatted";
