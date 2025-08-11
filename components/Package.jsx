@@ -5,11 +5,17 @@ import { LuExternalLink } from 'react-icons/lu';
 import { FaDownload } from 'react-icons/fa6';
 import Grid from './Grid';
 import fetchNpmDownloads from '../utils/npmDownloads';
+import fetchNpmVersion from '../utils/npmVersion';
 
 export default function Package({
-  side, title, desc = '', stack = '', href = '', npmPackage = '',
+  title,
+  desc = '',
+  stack = '',
+  href = '',
+  npmPackage = '',
 }) {
   const [downloadCount, setDownloadCount] = useState('');
+  const [version, setVersion] = useState('');
 
   useEffect(() => {
     if (npmPackage) {
@@ -18,15 +24,24 @@ export default function Package({
           setDownloadCount(count);
         }
       });
+
+      fetchNpmVersion(npmPackage).then((ver) => {
+        if (ver) {
+          setVersion(ver);
+        }
+      });
     }
   }, [npmPackage]);
 
   return (
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>
       <GridItem colSpan={{ base: 4, sm: 1 }}>
+        {version && (
         <Text color="white" opacity={0.5}>
-          {side}
+          v
+            {version}
         </Text>
+        )}
         {downloadCount && (
           <Text color="white" opacity={0.3} fontSize="sm" mt={1}>
             <FaDownload style={{ display: 'inline', marginRight: '0.25rem' }} />
@@ -60,17 +75,9 @@ export default function Package({
 }
 
 Package.propTypes = {
-  side: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string,
   stack: PropTypes.string,
   href: PropTypes.string,
   npmPackage: PropTypes.string,
-};
-
-Package.defaultProps = {
-  desc: '',
-  stack: '',
-  href: '',
-  npmPackage: '',
 };
