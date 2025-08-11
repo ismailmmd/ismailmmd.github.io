@@ -27,16 +27,21 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.+(json|css|md)": "prettier --write"
+    "*.{js,jsx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": "prettier --write"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^4.6.2"
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.6.2"
   }
 }

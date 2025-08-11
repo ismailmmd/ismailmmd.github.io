@@ -1,16 +1,17 @@
 import React from 'react';
-import {
-  Box, Text, Flex, Link,
-} from '@chakra-ui/react';
+import { Box, Text, Flex, Link } from '@chakra-ui/react';
 import { LuExternalLink, LuCalendar, LuGlobe } from 'react-icons/lu';
 import metadata from '../utils/metadata.json';
 
 export default function Footer() {
-  const lastUpdated = new Date(metadata.lastUpdated).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const lastUpdated = new Date(metadata.lastUpdated).toLocaleDateString(
+    'en-US',
+    {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }
+  );
 
   return (
     <Box
@@ -32,17 +33,14 @@ export default function Footer() {
         <Flex align="center" gap={2}>
           <LuCalendar size={14} />
           <Text fontSize="sm" color="white" opacity={0.5}>
-            Last updated:
-            {' '}
-            {lastUpdated}
+            Last updated: {lastUpdated}
           </Text>
         </Flex>
 
         <Flex align="center" gap={2}>
           <LuGlobe size={14} />
           <Text fontSize="sm" color="white" opacity={0.5}>
-            Deployed on
-            {' '}
+            Deployed on{' '}
             <Link
               href="https://vercel.com"
               target="_blank"
