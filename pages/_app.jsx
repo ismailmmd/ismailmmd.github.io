@@ -5,6 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import PropTypes from 'prop-types';
 import theme from '../utils/theme';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import '../styles/globals.css';
 
 export default function App({ Component, pageProps }) {
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Header />
       <Component {...pageProps} />
+      <Footer />
       <Analytics />
       <SpeedInsights />
     </ChakraProvider>
