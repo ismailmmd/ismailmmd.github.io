@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "node scripts/update-metadata.js && git add utils/metadata.json && lint-staged"
     }
   },
   "lint-staged": {
