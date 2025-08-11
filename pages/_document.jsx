@@ -6,7 +6,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.ismailm.xyz/" />
 
         {/* Enhanced SEO Meta Tags */}
@@ -127,12 +126,6 @@ export default function Document() {
         />
 
         {/* Performance Optimization */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
         <link rel="preconnect" href="https://avatars.githubusercontent.com" />
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
