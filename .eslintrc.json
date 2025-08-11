@@ -12,6 +12,14 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
+  "settings": {
+    "import/resolver": {
+      "exports": {},
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "rules": {
     "react/require-default-props": "off"
   }
