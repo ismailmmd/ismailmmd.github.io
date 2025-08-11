@@ -15,9 +15,8 @@ try {
   metadata.lastUpdated = new Date().toISOString();
 
   fs.writeFileSync(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`);
-
-  console.log('✓ Updated metadata with last updated timestamp');
 } catch (error) {
+  // eslint-disable-next-line no-console
   console.error('✗ Failed to update metadata:', error.message);
   process.exit(1);
 }
