@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
     "dev": "next dev",
     "build": "next build --no-lint",
     "start": "next start",
