@@ -7,9 +7,10 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "dev": "next dev",
-    "build": "next build --no-lint",
+    "build": "npm run generate:sitemap && next build --no-lint",
     "start": "next start",
-    "prepare": "husky"
+    "prepare": "husky",
+    "generate:sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.7",

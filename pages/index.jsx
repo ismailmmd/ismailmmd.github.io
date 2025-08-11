@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ismail m</title>
+        <title>Ismail M - Full Stack Engineer</title>
       </Head>
 
       <Box py="115px" px={4} maxWidth={600} mx="auto">
@@ -38,10 +38,13 @@ export default function Home() {
             About Me
           </Heading>
           <Text>
-            I&apos;m Ismail — a builder at heart. I focus on backend
-            engineering, performance, and making products that grow and evolve
-            with real user feedback. I’m all about shipping fast, learning from
-            users, and always trying out new ideas.
+            I&apos;m Ismail — a builder at heart specialized in scalable backend
+            systems and microservices architecture. Expertise in Java,
+            TypeScript. I design high-throughput event-driven systems that serve
+            millions of users. Currently building the future of sales tools at
+            Pipedrive. I&apos;m passionate about performance optimization and
+            shipping fast, learning from real user feedback, and continuously
+            exploring innovative technologies.
           </Text>
         </Box>
         <Box mb={10}>
