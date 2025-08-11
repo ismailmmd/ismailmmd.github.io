@@ -1,0 +1,1 @@
+node scripts/update-metadata.js && git add utils/metadata.json && npx lint-staged

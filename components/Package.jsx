@@ -37,10 +37,9 @@ export default function Package({
     <Grid templateColumns="repeat(4, 1fr)" mb={10}>
       <GridItem colSpan={{ base: 4, sm: 1 }}>
         {version && (
-        <Text color="white" opacity={0.5}>
-          v
-            {version}
-        </Text>
+          <Text color="white" opacity={0.5}>
+            v{version}
+          </Text>
         )}
         {downloadCount && (
           <Text color="white" opacity={0.3} fontSize="sm" mt={1}>
@@ -59,15 +58,13 @@ export default function Package({
           alignItems="center"
         >
           {title}
-          {href && (
-          <LuExternalLink style={{ marginLeft: '0.5rem' }} />
-          )}
+          {href && <LuExternalLink style={{ marginLeft: '0.5rem' }} />}
         </Heading>
         {desc && <Text my={2}>{desc}</Text>}
         {stack && (
-        <Text color="white" opacity={0.5}>
-          {stack}
-        </Text>
+          <Text color="white" opacity={0.5}>
+            {stack}
+          </Text>
         )}
       </GridItem>
     </Grid>
