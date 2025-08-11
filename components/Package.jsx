@@ -38,8 +38,7 @@ export default function Package({
       <GridItem colSpan={{ base: 4, sm: 1 }}>
         {version && (
           <Text color="white" opacity={0.5}>
-            v
-            {version}
+            v{version}
           </Text>
         )}
         {downloadCount && (
