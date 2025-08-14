@@ -6,12 +6,6 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-      },
-    ],
     formats: ['image/webp', 'image/avif'],
     unoptimized: false,
   },
