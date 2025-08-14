@@ -11,29 +11,29 @@ export default function Document() {
         {/* Enhanced SEO Meta Tags */}
         <meta
           name="description"
-          content="Ismail Mohammed - Full Stack Engineer specializing in microservices, and backend development."
+          content="Ismail Mohammed - Full Stack Engineer specializing in building scalable cloud applications."
         />
         <meta
           name="keywords"
-          content="Full Stack Engineer, Backend Developer, Java, TypeScript, Microservices, Kafka, Node.js, AWS, Tallinn, Estonia, Software Engineer"
+          content="Full Stack Engineer, Backend Developer, Java, TypeScript, Microservices, Kafka, Node.js, AWS, Software Engineer"
         />
         <meta name="author" content="Ismail Mohammed" />
 
         {/* Open Graph Tags */}
         <meta
           property="og:title"
-          content="Ismail Mohammed - Full Stack Engineer | Java, TypeScript, Microservices, Backend Development"
+          content="Ismail Mohammed - Full Stack Engineer | Java, TypeScript, Golang"
         />
         <meta
           property="og:description"
-          content="Full Stack Engineer specializing in Java, TypeScript, microservices, and backend development. Experience with Kafka, Node.js, AWS, and scalable systems."
+          content="Full Stack Engineer specializing in building scalable cloud applications."
         />
         <meta
           property="og:image"
-          content="https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4"
+          content="https://www.ismailm.xyz/screenshot.png"
         />
         <meta property="og:url" content="https://www.ismailm.xyz/" />
-        <meta property="og:site_name" content="Ismail Mohammed" />
+        <meta property="og:site_name" content="ismailm.xyz" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
 
@@ -45,11 +45,11 @@ export default function Document() {
         />
         <meta
           name="twitter:description"
-          content="Full Stack Engineer specializing in TypeScript, microservices, and backend development."
+          content="Full Stack Engineer specializing in building scalable cloud applications."
         />
         <meta
           name="twitter:image"
-          content="https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4"
+          content="https://www.ismailm.xyz/screenshot.png"
         />
         <meta name="twitter:creator" content="@ismail5701" />
 
@@ -63,16 +63,15 @@ export default function Document() {
               '@type': 'Person',
               name: 'Ismail Mohammed',
               url: 'https://www.ismailm.xyz',
-              image:
-                'https://avatars.githubusercontent.com/u/37075892?s=400&u=1c08ffa3d87fcac23644913694801ff1792f351f&v=4',
+              image: 'https://www.ismailm.xyz/screenshot.png',
               sameAs: [
                 'https://github.com/ismailmmd',
-                'https://www.linkedin.com/in/ismailmmd',
+                'https://www.linkedin.com/in/ismail-mohmmd/',
                 'https://twitter.com/@ismail5701',
               ],
               jobTitle: 'Full Stack Engineer',
               description:
-                'Full Stack Engineer specializing in TypeScript, microservices, and backend development',
+                'Full Stack Engineer specializing in building scalable cloud applications',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Tallinn',
@@ -124,9 +123,6 @@ export default function Document() {
             }),
           }}
         />
-
-        {/* Performance Optimization */}
-        <link rel="preconnect" href="https://avatars.githubusercontent.com" />
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
