@@ -26,7 +26,10 @@ export default function Document() {
         />
         <meta
           property="og:description"
-          content="Full Stack Engineer specializing in building scalable cloud applications."
+          content="I'm Ismail — a builder at heart specialized in scalable backend systems and microservices architecture.
+          Expertise in Java, TypeScript. I design high-throughput event-driven systems that serve millions of users.
+          Currently building the future of sales tools at Pipedrive. I'm passionate about performance optimization and shipping fast,
+           learning from real user feedback, and continuously exploring innovative technologies."
         />
         <meta
           property="og:image"
