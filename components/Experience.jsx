@@ -3,6 +3,7 @@ import { Text, Heading, GridItem } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { LuExternalLink } from 'react-icons/lu';
 import Grid from './Grid';
+import { trackExperienceClick } from '../utils/analytics';
 
 export default function Experience({
   side,
@@ -26,6 +27,7 @@ export default function Experience({
           size="md"
           display="flex"
           alignItems="center"
+          onClick={href ? () => trackExperienceClick(title, href) : undefined}
         >
           {title}
           {href && <LuExternalLink style={{ marginLeft: '0.5rem' }} />}
