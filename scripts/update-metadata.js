@@ -12,7 +12,8 @@ try {
     metadata = JSON.parse(content);
   }
 
-  metadata.lastUpdated = new Date().toISOString();
+  const [date] = new Date().toISOString().split('T');
+  metadata.lastUpdated = date;
 
   fs.writeFileSync(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`);
 } catch (error) {
