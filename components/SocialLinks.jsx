@@ -13,6 +13,7 @@ import {
 import { FaStackOverflow, FaLinkedin, FaGithub } from 'react-icons/fa';
 import React from 'react';
 import colors from '../utils/colors';
+import { trackSocialClick } from '../utils/analytics';
 
 export default function SocialLinks() {
   const bgColor = colors.black[500];
@@ -20,7 +21,15 @@ export default function SocialLinks() {
   return (
     <Grid templateColumns="repeat(5, 1fr)" mb={10} alignItems="flex-start">
       <GridItem>
-        <Link href="https://www.linkedin.com/in/ismail-mohmmd/">
+        <Link
+          href="https://www.linkedin.com/in/ismail-mohmmd/"
+          onClick={() =>
+            trackSocialClick(
+              'LinkedIn',
+              'https://www.linkedin.com/in/ismail-mohmmd/'
+            )
+          }
+        >
           <Flex align="center" gap="2">
             {' '}
             <FaLinkedin /> LinkedIn{' '}
@@ -30,7 +39,12 @@ export default function SocialLinks() {
       <GridItem>
         <Popover trigger="hover" placement="bottom" openDelay={200}>
           <PopoverTrigger>
-            <Link href="https://github.com/ismailmmd">
+            <Link
+              href="https://github.com/ismailmmd"
+              onClick={() =>
+                trackSocialClick('GitHub', 'https://github.com/ismailmmd')
+              }
+            >
               <Flex align="center" gap="2">
                 {' '}
                 <FaGithub /> Github{' '}
@@ -58,7 +72,15 @@ export default function SocialLinks() {
       <GridItem>
         <Popover trigger="hover" placement="bottom" openDelay={200}>
           <PopoverTrigger>
-            <Link href="https://stackoverflow.com/users/7962589/ismail">
+            <Link
+              href="https://stackoverflow.com/users/7962589/ismail"
+              onClick={() =>
+                trackSocialClick(
+                  'StackOverflow',
+                  'https://stackoverflow.com/users/7962589/ismail'
+                )
+              }
+            >
               <Flex align="center" gap="2">
                 {' '}
                 <FaStackOverflow /> StackOverflow{' '}

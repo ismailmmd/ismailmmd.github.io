@@ -6,6 +6,7 @@ import { FaDownload } from 'react-icons/fa6';
 import Grid from './Grid';
 import fetchNpmDownloads from '../utils/npmDownloads';
 import fetchNpmVersion from '../utils/npmVersion';
+import { trackProjectClick } from '../utils/analytics';
 
 export default function Package({
   title,
@@ -56,6 +57,7 @@ export default function Package({
           size="md"
           display="flex"
           alignItems="center"
+          onClick={href ? () => trackProjectClick(title, href) : undefined}
         >
           {title}
           {href && <LuExternalLink style={{ marginLeft: '0.5rem' }} />}
