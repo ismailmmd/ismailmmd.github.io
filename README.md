@@ -1,8 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ![alt text](docs/screenshot.png)
 
-## Getting Started.
+## Analytics
+
+- [Google Analytics - Traffic acquisition](https://analytics.google.com/analytics/web/#/p502191192/)
+- [Vercel Analytics](https://vercel.com/ismailmmds-projects/ismailm/analytics)
+
+## Development
 
 Clone and run the development server:
 
